@@ -1,10 +1,19 @@
 <html>
-  <head>
+
+<head>
   <title>Playground</title>
-  </head>
-  <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
   <h1>Play with me in my playspace!</h1>
-  
-  
-  </body>
+  <p id=p1></p>
+
+  <script type="text/javascript">
+    $.get("data.txt", function (data) {
+      $("#p1").text(data);
+    });
+  </script>
+</body>
+
 </html>
